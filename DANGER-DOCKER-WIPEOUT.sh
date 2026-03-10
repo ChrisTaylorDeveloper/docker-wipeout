@@ -16,4 +16,5 @@ docker system prune -a --force
 docker volume rm $(docker volume ls -q) --force
 
 # Delete all networks.
-docker network rm $(docker network ls -q) --force
+# Causes error, trying to remove host and bridge networks!
+# docker network rm $(docker network ls -q) --force
