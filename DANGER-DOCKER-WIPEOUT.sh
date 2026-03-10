@@ -14,3 +14,6 @@ docker system prune -a --force
 
 # Delete all volumes.
 docker volume rm $(docker volume ls -q) --force
+
+# Delete all networks.
+docker network rm $(docker network ls -q) --force
